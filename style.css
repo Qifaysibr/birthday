@@ -1,0 +1,235 @@
+:root{
+    --pink: #f14e95;
+    --bg: #0a0a0a;
+    --shadow: 0 2px 2px rgba(0,0,0,0.5)
+
+}
+
+body{
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    min-height: 5000px;
+}
+
+
+.hero::before{
+    content:'' ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://e7.pngegg.com/pngimages/146/771/png-clipart-floor-beautiful-brown-envelope-miscellaneous-brown.png);
+    background-size:100% 100%;
+    z-index: -1;
+    
+    
+}
+
+
+
+.hero{
+    position: relative;
+    min-height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.hero h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 6rem;
+}
+
+.hero h4 {
+    font-size: 1.6rem;
+}
+
+.hero p {
+    font-size: 1.4rem;
+}
+.hero a {
+    color: var(--pink);
+    background-color: white;
+}
+
+.hero a:hover {
+    background-color: var(--pink);
+    color: white;
+}
+.mynavbar{
+background-color: rgba(255,255,255,0.4) !important;
+}
+
+.mynavbar .navbar-brand, 
+.mynavbar .offcanvas-title{
+    font-family: 'Sacramento', cursive;
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.mynavbar .nav-link{
+    text-transform: uppercase;
+}
+.home{
+    background-image: url(img/bg.png);
+    ;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+}
+.home h2 {
+    color: #b71515;
+    font-family: 'Sacramento';
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.home h3 {
+    color:#444;
+    text-align:center;
+}
+
+.home .couple h3{
+    font-family: "Sacramento";
+    font-size: 2.4rem;
+    color:saddlebrown
+}
+
+.home .couple img{
+    width:100%
+}
+
+
+
+    /* CSS untuk slideshow */
+ .slideshow-container {
+        max-width: 80%;
+        position: relative;
+        margin-top: 5vh;
+        margin-left: 5vh;
+        border-radius: 50%;
+      }
+  
+      .slide-img {
+        width: 100%;
+        height: auto;
+      }
+  
+      /* CSS untuk animasi */
+      .fade-in {
+        animation: fadeIn 1.5s ease-in-out;
+      }
+  
+      @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+
+
+      .gift-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      
+      .gift-item {
+        position: relative;
+        width: 250px;
+        height: 350px;
+        margin: 10px;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+      
+      .gift-item img {
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+      }
+      
+      .gift-info {
+        padding: 15px;
+      }
+      
+      .gift-info h3 {
+        color: #333;
+        margin-top: 0;
+      }
+      
+      .gift-info p {
+        color: #666;
+      }
+      
+      .gift-item:hover {
+        transform: translateY(-5px);
+      }
+      
+      .gift-item:hover img {
+        transform: scale(1.1);
+      }
+      
+      .gift-item:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        z-index: 1;
+        transition: opacity 0.3s ease;
+      }
+      
+      .gift-item:hover:before {
+        opacity: 1;
+      }
+ /* Media Requery */
+/* Laptop */
+@media (max-width:992px){
+    html {
+        font-size: 75%;
+    }
+    .simply-countdown > .simply-section {
+        padding: 70px;
+
+    }
+}
+
+/* Tablet */
+@media (max-width:768px){
+    html {
+        font-size: 65%;
+    }
+    .simply-countdown > .simply-section {
+        padding: 60px;
+        margin: 5px;
+
+    }
+}
+
+/* Handphone */
+@media (max-width:576px){
+    html {
+        font-size: 60 %;
+    }
+    .simply-countdown > .simply-section {
+        padding: 45px;
+        margin: 3px;
+
+    }
+    .mynavbar .nav-link{
+        font-size: 2rem;
+        text-align: center;
+    }
+}

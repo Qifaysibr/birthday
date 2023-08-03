@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Syafiq Ibrahim</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,400;0,600;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+    <!--Simply Countdown-->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css">
+    <script src="countdown/simplyCountdown.min.js"></script>
+  </head>
+
+  <body>
+     <!-- Audio-->
+     <audio controls-hidden autoplay loop>
+      <source src="audio/jamal.mp3" type="audio/mpeg">
+    </audio>
+
+       <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center ">
+          <main>
+            <h4>Kepada Abi/Umi/Saudara/i,</h4>
+            <h1>Syafiq Ibrahim</h1>
+            <p>Akan ulang tahun ke 22 dalam:</p>
+            <div class="simply-countdown"></div>
+            <a href="#gifts" class="btn btn-lg mt-4 ">Click Me!</a>
+         </main>
+        </section>
+      
+        <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top mynavbar">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Syafiq Ibrahim</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Syafiq Ibrahim</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="navbar-nav ms-auto">
+                  <a class="nav-link" href="#home">Home</a>
+                  <!-- <a class="nav-link" href="#info">Info</a> -->
+                  <a class="nav-link" href="#gallery">Gallery</a>
+                  <a class="nav-link" href="#gifts">Gifts</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+
+<section id="home" class="home">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <h2>Bio</h2>
+        <h3>Sebagai seorang muslim, perjalanan hidup saya telah menjadi sebuah cerita yang penuh dengan makna dan hikmah. Dari saya lahir hingga saat ini, agama Islam telah menjadi kompas yang menuntun setiap langkah dalam hidup saya. Melalui proses belajar, merenung, dan mengalami berbagai ujian, saya telah belajar untuk meningkatkan iman dan takwa kepada Allah. Pengalaman hidup ini telah mengajarkan saya tentang pentingnya menjalani kehidupan dengan rasa syukur dan kesabaran, serta merangkul nilai-nilai kasih sayang, toleransi, dan pengertian terhadap sesama manusia. Sebagai seorang muslim, saya percaya bahwa perjalanan ini tidak pernah berhenti, dan saya berharap dapat terus tumbuh dan meningkatkan hubungan saya dengan Allah, serta berkontribusi positif dalam mewujudkan kedamaian dan kesejahteraan bagi seluruh umat manusia.</h3>
+      </div>
+    </div>
+    <div class="row couple mt-5">
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-8 text-end">
+            <h3>Syafiq Ibrahim</h3>
+            <p s>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ullam perferendis iure ad minima? Cum deleniti voluptatem consequuntur nesciunt saepe, laborum minima tenetur facilis maxime rem possimus velit. Consequuntur, distinctio!</p>
+          </div>
+          <div class="col-4">
+            <img src="img/syafiq1.jpg" alt="syafiq" class="img-responsive rounded-circle">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"> </script>
+
+    <script src="countdown/simplyCountdown.min.js"></script>
+    <script>
+      simplyCountdown('.simply-countdown', {
+        year: 2023, // Tahun target countdown
+        month: 8,   // Bulan target countdown
+        day: 5,    // Hari target countdown
+        hours: 5,
+        minutes: 0,
+        seconds: 0,
+        words: {
+          days: { singular: 'hari', plural: 'hari' },
+          hours: { singular: 'jam', plural: 'jam' },
+          minutes: { singular: 'menit', plural: 'menit' },
+          seconds: { singular: 'detik', plural: 'detik' }
+        },
+        plural: true,
+        inline: false,
+        enableUtc: false,
+        onEnd: function () {
+          // Your code here
+        },
+        refresh: 1000,
+        sectionClass: 'simply-section',
+        amountClass: 'simply-amount',
+        wordClass: 'simply-word',
+        zeroPad: false,
+        countUp: false,
+      });
+    </script>
+    
+    <section id="gallery" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Gallery</h2>
+            <h3>Ulang Tahun Islami, momen keren di kehidupan muslim. Slideshow foto ini penuh kebahagiaan dan terima kasih ke Allah. Foto-foto seru, doa-doa, dan refleksi spiritual bikin momen ini bermakna banget. Semoga slideshow ini jadi kenangan manis tentang cinta dan iman yang terus menguatkan langkah kita. Selamat ulang tahun! 🎉🎂</h3>
+          </div>
+        </div>
+    </div>
+    
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <img class="slide-img fade-in" src="img/syafiq1.jpg" alt="Foto 1">
+      </div>
+  
+      <div class="mySlides">
+        <img class="slide-img fade-in" src="img/syafiq2.jpg" alt="Foto 2">
+      </div>
+
+      <div class="mySlides">
+        <img class="slide-img fade-in" src="img/background.JPG" alt="Foto 3">
+      </div>
+      
+      <div class="mySlides">
+        <img class="slide-img fade-in" src="img/syafiq3.jpg" alt="Foto 4">
+      </div>
+
+      <div class="mySlides">
+        <img class="slide-img fade-in" src="img/syafiq4.jpg" alt="Foto 5">
+      </div>
+
+      <div class="mySlides">
+        <img class="slide-img fade-in" src="img/ramean.jpg" alt="Foto 6">
+      </div>
+
+      <!-- Tambahkan div mySlides dan img untuk setiap foto yang ingin Anda tambahkan -->
+    </div>
+  
+    <script>
+      // JavaScript untuk mengatur slideshow
+      let slideIndex = 0;
+      showSlides();
+  
+      function showSlides() {
+        let slides = document.getElementsByClassName("mySlides");
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000); // Ubah angka 3000 menjadi durasi masing-masing slide dalam milidetik (misal: 5000 untuk 5 detik)
+      }
+    </script>
+    </section>
+  <!-- gifts -->
+  <section id="gifts" class="home">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+  
+  <h1>“Dari Abu Hurairah, dari Nabi shallallahu 'alaihi wa sallam bersabda “Saling memberi hadiahlah, niscaya kalian akan saling mencintai”. (HR. Bukhari dalam al-adab al-mufrad nomor 269</h1>
+  <br><br><br><br><br><br><br>
+  <div class="gift-container">
+    <a href="https://shopee.co.id/product/173159700/20926948174?d_id=8faf8&utm_content=3vLhSebR2mNUHDGSFtSLshi2zhu1" target="_blank">
+      <div class="gift-item">
+        <img src="https://down-id.img.susercontent.com/file/9bb3781cf41d76bbc8e530768b537a01" alt="Hadiah 1">
+        <div class="gift-info">
+          <h3>Hadiah 1</h3>
+          <p>Holder Hp Motor Besi Stang Full Alumunium Dudukan Penahan Hape Sandaran Penyangga Pegangan Handphone di sepeda original kuat awet</p>
+        </div>
+      </div>
+    </a>
+    <a href="https://shopee.co.id/Jaket-Hoodie-WANITA-PRIA-PROGRAMMER-CODING-IN-PROGRESS-i.134233994.4142478653?sp_atk=0bc8e3c3-6efd-4ba6-838c-281a8c673dea&xptdk=0bc8e3c3-6efd-4ba6-838c-281a8c673dea" target="_blank">
+      <div class="gift-item">
+        <img src="https://down-id.img.susercontent.com/file/1d18986e2a1be928477299ef015668b7" alt="Hadiah 2">
+        <div class="gift-info">
+          <h3>Hadiah 2</h3>
+          <p>Jaket Hoodie WANITA PRIA PROGRAMMER CODING IN PROGRESS</p>
+        </div>
+      </div>
+    </a>
+    <!-- Tambahkan div dengan link gambar hadiah dan URL online shop-nya -->
+  </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+  </body>
+
+</html>
